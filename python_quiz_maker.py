@@ -29,3 +29,11 @@ while True:
             print("Please enter a, b, c, or d.")
 
 # save the question to file and ask if the user wants to continue or stop
+    questions(filename, question, options, correct_answer)
+    print("Question added to quiz_bank.txt")
+    
+    print("\nEnter '1' to stop adding questions or press any key to continue.")
+    stop = input()
+    if stop == '1':
+        print("\n All questions saved to quiz_bank.txt.")
+        break
