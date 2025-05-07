@@ -43,8 +43,8 @@ for question in questions:
         print("Wrong! The correct answer is", correct_answer + ".\n")
 
     # ask the user if they want to continue
-    cont = input("Do you want to continue? (yes/no): ").strip().lower()
-    if cont != "yes":
+    continue_quiz = input("Do you want to continue? (yes/no): ").strip().lower()
+    if continue_quiz != "yes":
         print("Thanks for playing!")
         break
 
