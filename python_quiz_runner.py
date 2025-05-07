@@ -35,12 +35,18 @@ for q in questions:
     answer = input("Your answer (a/b/c/d): ").strip().lower()
     correct_answer = q[5].split(": ")[1].strip().lower()
 
-# check if the answer is correct and update the score
+    # check if the answer is correct and update the score
     if answer == correct_answer:
         print("Correct!\n")
         score += 1
     else:
         print("Wrong! The correct answer is", correct_answer + ".\n")
-        
-# ask the user if they want to continue
+
+    # ask the user if they want to continue
+    cont = input("Do you want to continue? (yes/no): ").strip().lower()
+    if cont != "yes":
+        print("Thanks for playing!")
+        break
+
 # show the final score after the quiz ends
+print(f"\nFinal score: {score} out of {len(questions)}")
