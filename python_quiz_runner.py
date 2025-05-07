@@ -14,8 +14,16 @@ def load_questions(filename):
     return quizzes
 
 # set the filename and load the questions
+filename = "quiz_bank.txt"
+questions = load_questions(filename)
+
 # shuffle the questions randomly
+random.shuffle(questions)
+
 # set the initial score to 0 and a welcome message to the user
+score = 0
+print("Welcome to the Quiz Game!")
+
 # go through each question and ask the user and its answer
 # check if the answer is correct and update the score
 # ask the user if they want to continue
