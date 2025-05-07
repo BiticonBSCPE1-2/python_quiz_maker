@@ -25,15 +25,15 @@ score = 0
 print("Welcome to the Quiz Game!")
 
 # go through each question and ask the user and its answer
-for q in questions:
-    print("\n" + q[0])
-    print(q[1])
-    print(q[2])
-    print(q[3])
-    print(q[4])
+for question in questions:
+    print("\n" + question[0])
+    print(question[1])
+    print(question[2])
+    print(question[3])
+    print(question[4])
 
     answer = input("Your answer (a/b/c/d): ").strip().lower()
-    correct_answer = q[5].split(": ")[1].strip().lower()
+    correct_answer = question[5].split(": ")[1].strip().lower()
 
     # check if the answer is correct and update the score
     if answer == correct_answer:
