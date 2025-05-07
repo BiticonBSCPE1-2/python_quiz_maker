@@ -1,0 +1,28 @@
+Question: What is 1 + 1?
+a. 1
+b. 2
+c. 3
+d. 4
+Answer: b
+---
+Question: What is 2 + 2?
+a. 2
+b. 6
+c. 4
+d. 8
+Answer: c
+---
+Question: Is 1 equal to 2?
+a. Yes
+b. No
+c. Maybe
+d. None of the Above
+Answer: b
+---
+Question: Do money come from trees?
+a. Yes
+b. No
+c. Maybe
+d. None of the Above
+Answer: b
+---
