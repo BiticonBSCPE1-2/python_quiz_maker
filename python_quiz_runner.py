@@ -6,12 +6,12 @@ def load_questions(filename):
     with open(filename, "r") as file:
         content = file.read()
     blocks = content.strip().split("---\n")
-    quizzes = []
+    questions = []
     for block in blocks:
         lines = block.strip().split("\n")
         if len(lines) >= 6:
-            quizzes.append(lines)
-    return quizzes
+            questions.append(lines)
+    return questions
 
 # set the filename and load the questions
 filename = "quiz_bank.txt"
