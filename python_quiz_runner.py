@@ -25,6 +25,22 @@ score = 0
 print("Welcome to the Quiz Game!")
 
 # go through each question and ask the user and its answer
+for q in questions:
+    print("\n" + q[0])
+    print(q[1])
+    print(q[2])
+    print(q[3])
+    print(q[4])
+
+    answer = input("Your answer (a/b/c/d): ").strip().lower()
+    correct_answer = q[5].split(": ")[1].strip().lower()
+
 # check if the answer is correct and update the score
+    if answer == correct_answer:
+        print("Correct!\n")
+        score += 1
+    else:
+        print("Wrong! The correct answer is", correct_answer + ".\n")
+        
 # ask the user if they want to continue
 # show the final score after the quiz ends
